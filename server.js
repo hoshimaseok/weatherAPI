@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const request = require('request');
 require('dotenv').config();
 
+const apiKey = process.env.API_KEY;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('views', path.join(__dirname, 'views'));
